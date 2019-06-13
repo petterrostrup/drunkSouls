@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+  mongo:
+    image: mongo
+    volumes:
+      - mongo_data:/data
+    ports:
+      - "27017:27017"
+    networks:
+      - front-end
+  web-app:
+    build: ./drunk-souls
+    depends_on:
+      - mongo
+    ports:
+      - "8080:80"
+    networks:
+      - front-end

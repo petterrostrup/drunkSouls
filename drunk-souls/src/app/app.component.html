@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark special-font">
+    <a class="navbar-brand" routerLink="">Drunk Souls</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" routerLink="/rules">Rules <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active" routerLink="/covenants">Covenants <span class="sr-only">(current)</span></a>
+      </div>
+    </div>
+  </nav>
+  <div class="container back-image">
+    <div class="row">
+      <div class="col">
+
+      </div>
+      <div class="col-10 main-content special-font">
+          <router-outlet></router-outlet>
+      </div>
+      <div class="col">
+        
+      </div>
+    </div>
+      
+  </div>
+
