@@ -1,6 +1,6 @@
 version: "3.7"
 services:
   web-app:
-    build: ./drunk-souls
+    build: ./drunk-souls/
     ports:
-      - "8080:80"
+      - "8080:4200"
