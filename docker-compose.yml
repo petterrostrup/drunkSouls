@@ -4,5 +4,3 @@ services:
     build: ./drunk-souls
     ports:
       - "8080:80"
-    networks:
-      - front-end
