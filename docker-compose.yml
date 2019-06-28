@@ -3,4 +3,4 @@ services:
   web-app:
     build: ./drunk-souls/
     ports:
-      - "8080:80"
+      - "80:80"
