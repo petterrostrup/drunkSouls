@@ -5,8 +5,8 @@ class WarriorOfSunlight extends React.Component {
   render() {
     return (
       <div>
-        <h1 class="text-center">Warrior of Sunlight</h1>
-        <div class="text-center">
+        <h1 className="text-center">Warrior of Sunlight</h1>
+        <div className="text-center">
             <img src={Warriors} alt="Warriors"></img>
         </div>
 

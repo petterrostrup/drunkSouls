@@ -5,8 +5,8 @@ class PilgrimsOfDark extends React.Component {
   render() {
     return (
       <div>
-        <h1 class="text-center">Pilgrims of Dark</h1>
-          <div class="text-center">
+        <h1 className="text-center">Pilgrims of Dark</h1>
+          <div className="text-center">
               <img src={Pilgrims} alt="Pilgrims"></img>
           </div>
 

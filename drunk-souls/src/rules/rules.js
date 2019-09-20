@@ -4,14 +4,15 @@ class Rules extends React.Component {
   render() {
     return (
       <div>
-        <h1 class="text-center">Drunk Souls Rules Overview</h1>
-        <p1>
+        <h1 className="text-center">Drunk Souls Rules Overview</h1>
+        <p>
           This is an overview of all the rules for the drunk souls drinking game. The rules are divided into several categories that depend on how experienced the players are.
           <br></br>
           <br></br>
-        </p1>
-        <p2>
+        </p>
+        <p>
           The base rules are for all players, and additional rules are decided based on your experience like this:
+        </p>
 
           <ul>
             <li>New players - Players that have not yet completed a dark souls game.</li>
@@ -19,7 +20,6 @@ class Rules extends React.Component {
             <li>Expert players - Advanced players that have a higher level of familiarity and skill with the game that are not limited enough by the advanced rules.</li>
           </ul>
           All rulesets above the base rules also include the previous ones. E.g. expert players play with the expert rules in addition to the base rules and advanced rules.
-        </p2>
 
         <h2>Base Rules</h2>
         <p>These rules are the standard rules that all players must follow.</p>
