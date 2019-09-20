@@ -5,8 +5,8 @@ class CompanyOfChampions extends React.Component {
   render() {
     return (
       <div>
-        <h1 class="text-center">Company of Champions</h1>
-        <div class="text-center">
+        <h1 className="text-center">Company of Champions</h1>
+        <div className="text-center">
             <img src={Champions} alt="Champions"></img>
         </div>
 
