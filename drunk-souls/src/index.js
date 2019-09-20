@@ -5,15 +5,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, Container, Row, Col} from 'react-bootstrap';
 import './index.css';
 import App from './App';
-import Home from './home/home';
+import Home from './home/Home';
 import Rules from './rules/rules';
-import Covenants from './covenants/covenants';
+import Covenants from './covenants/Covenants';
 import * as serviceWorker from './serviceWorker';
+import WarriorOfSunlight from './covenants/warrior-of-sunlight/WarriorOfSunlight';
+import BladesOfTheDarkmoon from './covenants/blades-of-the-darkmoon/BladesOfTheDarkmoon';
+import BrotherhoodOfBlood from './covenants/brotherhood-of-blood/BrotherhoodOfBlood';
+import CompanyOfChampions from './covenants/company-of-champions/CompanyOfChampions';
+import PilgrimsOfDark from './covenants/pilgrims-of-dark/PilgrimsOfDark';
+
 
 const routing = (
     <Router>
-      <div class="Navbar">
-        <Navbar expand="lg" variant="dark" bg="dark" fixed="top">
+      <div className="Navbar">
+        <Navbar expand="lg" variant="dark" fixed="top">
           <Navbar.Brand href="/">Drunk Souls</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -28,10 +34,15 @@ const routing = (
           <Row>
               <Col></Col>
               <Col xs={12}>
-                <div class="main-content">
+                <div className="main-content">
                     <Route exact path="/" component={App} />
                     <Route path="/rules" component={Rules} />
-                    <Route path="/covenants" component={Covenants} />
+                    <Route exact path="/covenants" component={Covenants} />
+                    <Route path="/covenants/blades-of-the-darkmoon" component={BladesOfTheDarkmoon}/>
+                    <Route path="/covenants/brotherhood-of-blood" component={BrotherhoodOfBlood}/>
+                    <Route path="/covenants/company-of-champions" component={CompanyOfChampions}/>
+                    <Route path="/covenants/pilgrims-of-dark" component={PilgrimsOfDark}/>
+                    <Route path="/covenants/warrior-of-sunlight" component={WarriorOfSunlight}/>
                 </div>
               </Col>
               <Col></Col>
