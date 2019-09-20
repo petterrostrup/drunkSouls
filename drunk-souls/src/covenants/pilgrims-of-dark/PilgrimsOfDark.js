@@ -1,5 +1,5 @@
 import React from 'react'
-import Pilgrims from '../../img/pilgrims.jpg'
+import Pilgrims from '../../img/pilgrims2.png'
 
 class PilgrimsOfDark extends React.Component {
   render() {

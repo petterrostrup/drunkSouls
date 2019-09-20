@@ -1,5 +1,5 @@
 import React from 'react'
-import Darkmoon from '../../img/darkmoon.png'
+import Darkmoon from '../../img/darkmoon2.png'
 
 class BladesOfTheDarkmoon extends React.Component {
   render() {
@@ -7,7 +7,7 @@ class BladesOfTheDarkmoon extends React.Component {
       <div>
         <h1 className="text-center">Blades of the Darkmoon</h1>
         <div className="text-center">
-            <img style={{width:"25%"}} src={Darkmoon} alt="Darkmoon"></img>
+            <img src={Darkmoon} alt="Darkmoon"></img>
         </div>
 
 
