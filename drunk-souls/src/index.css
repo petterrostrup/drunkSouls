@@ -40,3 +40,20 @@ code {
   width: 100%;
   object-fit: cover;
 }
+.navbar-dark{
+  background: rgba(0, 0, 0, 0.9);
+  color: rgb(240, 240, 240);
+}
+
+.card-dark {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.btn-end {
+  margin-top: auto
+}
+.flexing-container {
+  display: flex;
+  flex-direction: column;
+}
+
