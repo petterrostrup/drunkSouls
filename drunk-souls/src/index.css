@@ -27,12 +27,12 @@ code {
 }
 
 .main-content{
-  margin-top: 1rem;
+  margin-top: 5rem;
   padding: 1rem;
   border: 1px;
   border-color: black;
   border-style: solid;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   color: rgb(240, 240, 240);
 }
 .covenant-image{

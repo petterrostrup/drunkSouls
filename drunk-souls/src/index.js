@@ -12,22 +12,22 @@ import * as serviceWorker from './serviceWorker';
 
 const routing = (
     <Router>
-      <div class="Stuff">
-      <Navbar expand="lg" variant="dark" bg="dark">
-        <Navbar.Brand href="/">Drunk Souls</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="/rules">Rules</Nav.Link>
-            <Nav.Link href="/covenants">Covenants</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <div class="Navbar">
+        <Navbar expand="lg" variant="dark" bg="dark" fixed="top">
+          <Navbar.Brand href="/">Drunk Souls</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link href="/rules">Rules</Nav.Link>
+              <Nav.Link href="/covenants">Covenants</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
       </div>
       <Container>
           <Row>
               <Col></Col>
-              <Col xs={10}>
+              <Col xs={12}>
                 <div class="main-content">
                     <Route exact path="/" component={App} />
                     <Route path="/rules" component={Rules} />
