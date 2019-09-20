@@ -1,9 +1,9 @@
 import React from 'react'
-import Darkmoon from '../img/darkmoon.jpg'
-import Brotherhood from '../img/brotherhood.jpg'
-import Champions from '../img/champions.jpg'
-import Pilgrims from '../img/pilgrims.jpg'
-import Warriors from '../img/warriors.jpg'
+import Darkmoon from '../img/darkmoon2.png'
+import Brotherhood from '../img/brotherhood2.png'
+import Champions from '../img/champions2.png'
+import Pilgrims from '../img/pilgrims2.png'
+import Warriors from '../img/warriors2.png'
 import { Card, CardDeck, Nav } from 'react-bootstrap'
 
 
@@ -41,7 +41,7 @@ class Covenants extends React.Component {
               <Card.Body className="flexing-container">
                   <Card.Title>Blades of the Darkmoon</Card.Title>
                   <Card.Text>The covenant that focuses primarily on "PvP". This covenant balances the other covenants by making them drink for their sins.</Card.Text>
-                  <Nav.Link href="/covenants/blades-of-the-darkmoon" className="btn btn-secondary btn-end">Read more</Nav.Link>
+                  <Nav.Link href="/covenants/blades-of-the-darkmoon" className="btn btn-secondary navbar-dark btn-end">Read more</Nav.Link>
               </Card.Body>
           </Card>
           <Card text="white" className="card-dark">
@@ -49,7 +49,7 @@ class Covenants extends React.Component {
               <Card.Body className="flexing-container">
                   <Card.Title>Brotherhood of Blood</Card.Title>
                   <Card.Text>The covenant that focuses primarily on "PvP". This lets you invade other players in return for sins</Card.Text>
-                  <Nav.Link href="/covenants/brotherhood-of-blood" className="btn btn-secondary btn-end">Read more</Nav.Link>
+                  <Nav.Link href="/covenants/brotherhood-of-blood" className="btn btn-secondary navbar-dark btn-end">Read more</Nav.Link>
               </Card.Body>
           </Card>
           <Card text="white" className="card-dark">
@@ -57,7 +57,7 @@ class Covenants extends React.Component {
               <Card.Body className="flexing-container">
                   <Card.Title>Company of Champions</Card.Title>
                   <Card.Text>This covenant focuses mainly on the game itself. Makes the game more difficult in return for rewards</Card.Text>
-                  <Nav.Link href="/covenants/company-of-champions" className="btn btn-secondary btn-end">Read more</Nav.Link>
+                  <Nav.Link href="/covenants/company-of-champions" className="btn btn-secondary navbar-dark btn-end">Read more</Nav.Link>
               </Card.Body>
           </Card>
         </CardDeck>
@@ -68,7 +68,7 @@ class Covenants extends React.Component {
               <Card.Body className="flexing-container">
                   <Card.Title>Pilgrims of Dark</Card.Title>
                   <Card.Text>This covenant shakes up how the covenants interact with eachother. You can curse players so that they have to drink more.</Card.Text>
-                  <Nav.Link href="/covenants/pilgrims-of-dark" className="btn btn-secondary btn-end">Read more</Nav.Link>
+                  <Nav.Link href="/covenants/pilgrims-of-dark" className="btn btn-secondary navbar-dark btn-end">Read more</Nav.Link>
               </Card.Body>
           </Card>
           <Card text="white" className="card-dark">
@@ -76,7 +76,7 @@ class Covenants extends React.Component {
               <Card.Body className="flexing-container">
                   <Card.Title>Warrior of Sunlight</Card.Title>
                   <Card.Text>The Sunbros. This covenant focuses on helping other players and praising the sun.</Card.Text>
-                  <Nav.Link href="/covenants/warrior-of-sunlight" className="btn btn-secondary btn-end">Read more</Nav.Link>
+                  <Nav.Link href="/covenants/warrior-of-sunlight" className="btn btn-secondary navbar-dark btn-end">Read more</Nav.Link>
               </Card.Body>
           </Card>
           <Card text="white" style={{ opacity: 0 }}>

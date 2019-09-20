@@ -1,5 +1,5 @@
 import React from 'react'
-import Champions from '../../img/champions.jpg'
+import Champions from '../../img/champions2.png'
 
 class CompanyOfChampions extends React.Component {
   render() {

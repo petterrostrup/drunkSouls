@@ -1,5 +1,5 @@
 import React from 'react'
-import Warriors from '../../img/warriors.jpg'
+import Warriors from '../../img/warriors2.png'
 
 class WarriorOfSunlight extends React.Component {
   render() {
