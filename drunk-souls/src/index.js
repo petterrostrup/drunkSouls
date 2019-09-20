@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, Container, Row, Col} from 'react-bootstrap';
 import './index.css';
 import App from './App';
-import Home from './home/Home';
 import Rules from './rules/rules';
 import Covenants from './covenants/Covenants';
 import * as serviceWorker from './serviceWorker';

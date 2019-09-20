@@ -10,13 +10,13 @@ class App extends React.Component {
       <p>This is an info page for the Drunk Souls drinking game with rule specifications and definitions. The "rules" page covers all the different rules, while the "covenants" page covers the covenant system as a whole</p>
       <div class="row">
           <div class="col-sm-4">
-              <img src={drunk_souls_3} width="100%" height="200px" />
+              <img src={drunk_souls_3} width="100%" height="200px" alt="Drunk Souls 3"/>
           </div>
           <div class="col-sm-4">
-              <img src={drunk_souls_wasted} width="100%" height="200px" />
+              <img src={drunk_souls_wasted} width="100%" height="200px" alt="Drunk Souls Wasted"/>
           </div>
           <div class="col-sm-4">
-              <img src={fireball_finish} width="100%" height="200px" />
+              <img src={fireball_finish} width="100%" height="200px" alt="Drunk Souls Fireball"/>
           </div>
       </div>
       
