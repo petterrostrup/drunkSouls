@@ -1,5 +1,6 @@
 import React from 'react'
 import Champions from '../../img/champions2.png'
+import Image from 'react-bootstrap/Image'
 
 class CompanyOfChampions extends React.Component {
   render() {
@@ -7,7 +8,7 @@ class CompanyOfChampions extends React.Component {
       <div>
         <h1 className="text-center">Company of Champions</h1>
         <div className="text-center">
-            <img src={Champions} alt="Champions"></img>
+            <Image fluid src={Champions} alt="Champions"></Image>
         </div>
 
 

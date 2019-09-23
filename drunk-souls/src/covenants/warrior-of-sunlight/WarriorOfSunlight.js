@@ -1,5 +1,7 @@
 import React from 'react'
 import Warriors from '../../img/warriors2.png'
+import Image from 'react-bootstrap/Image'
+
 
 class WarriorOfSunlight extends React.Component {
   render() {
@@ -7,7 +9,7 @@ class WarriorOfSunlight extends React.Component {
       <div>
         <h1 className="text-center">Warrior of Sunlight</h1>
         <div className="text-center">
-            <img src={Warriors} alt="Warriors"></img>
+            <Image fluid src={Warriors} alt="Warriors"></Image>
         </div>
 
         <h2>Overview:</h2>
