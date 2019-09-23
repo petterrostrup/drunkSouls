@@ -1,5 +1,6 @@
 import React from 'react'
 import Darkmoon from '../../img/darkmoon2.png'
+import Image from 'react-bootstrap/Image'
 
 class BladesOfTheDarkmoon extends React.Component {
   render() {
@@ -7,7 +8,7 @@ class BladesOfTheDarkmoon extends React.Component {
       <div>
         <h1 className="text-center">Blades of the Darkmoon</h1>
         <div className="text-center">
-            <img src={Darkmoon} alt="Darkmoon"></img>
+            <Image fluid src={Darkmoon} alt="Darkmoon"></Image>
         </div>
 
 

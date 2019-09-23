@@ -1,5 +1,6 @@
 import React from 'react'
 import Pilgrims from '../../img/pilgrims2.png'
+import Image from 'react-bootstrap/Image'
 
 class PilgrimsOfDark extends React.Component {
   render() {
@@ -7,7 +8,7 @@ class PilgrimsOfDark extends React.Component {
       <div>
         <h1 className="text-center">Pilgrims of Dark</h1>
           <div className="text-center">
-              <img src={Pilgrims} alt="Pilgrims"></img>
+              <Image fluid src={Pilgrims} alt="Pilgrims"></Image>
           </div>
 
           <h2>Overview:</h2>
