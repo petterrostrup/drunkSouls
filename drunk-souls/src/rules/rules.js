@@ -2,6 +2,7 @@ import React from 'react'
 
 class Rules extends React.Component {
   render() {
+    document.title = "Drunk Souls - Rules";
     return (
       <div>
         <h1 className="text-center">Drunk Souls Rules Overview</h1>
