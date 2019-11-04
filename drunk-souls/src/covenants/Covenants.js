@@ -12,6 +12,7 @@ import '../index.css'
 class Covenants extends React.Component {
 
   render() {
+    document.title = "Drunk Souls - Covenants";
     return (
       <div>
         <h1 className="text-center">Covenants overview</h1>

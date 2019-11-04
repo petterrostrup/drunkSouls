@@ -5,6 +5,7 @@ import Image from 'react-bootstrap/Image'
 
 class WarriorOfSunlight extends React.Component {
   render() {
+    document.title = "Drunk Souls - Warriors of Sunlight";
     return (
       <div>
         <h1 className="text-center">Warrior of Sunlight</h1>
