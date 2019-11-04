@@ -4,6 +4,7 @@ import Image from 'react-bootstrap/Image'
 
 class CompanyOfChampions extends React.Component {
   render() {
+    document.title = "Drunk Souls - Company of Champions";
     return (
       <div>
         <h1 className="text-center">Company of Champions</h1>

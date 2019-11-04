@@ -4,6 +4,7 @@ import Image from 'react-bootstrap/Image'
 
 class BladesOfTheDarkmoon extends React.Component {
   render() {
+    document.title = "Drunk Souls - Blades of the Darkmoon";
     return (
       <div>
         <h1 className="text-center">Blades of the Darkmoon</h1>

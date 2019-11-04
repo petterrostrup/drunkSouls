@@ -4,6 +4,7 @@ import Image from 'react-bootstrap/Image'
 
 class PilgrimsOfDark extends React.Component {
   render() {
+    document.title = "Drunk Souls - Pilgrims of Dark";
     return (
       <div>
         <h1 className="text-center">Pilgrims of Dark</h1>

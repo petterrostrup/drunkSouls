@@ -5,6 +5,7 @@ import Image from 'react-bootstrap/Image'
 
 class BrotherhoodOfBlood extends React.Component {
   render() {
+    document.title = "Drunk Souls - Brotherhood of Blood";
     return (
       <div>
         <h1 className="text-center">Brotherhood of Blood</h1>

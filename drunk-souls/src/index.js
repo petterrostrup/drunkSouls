@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, Container, Row, Col} from 'react-bootstrap';
-import './index.css';
-import App from './App';
-import Rules from './rules/rules';
-import Covenants from './covenants/Covenants';
 import * as serviceWorker from './serviceWorker';
+
+import App from './App';
+import Rules from './rules/Rules';
+import './index.css';
+import Covenants from './covenants/Covenants';
 import WarriorOfSunlight from './covenants/warrior-of-sunlight/WarriorOfSunlight';
 import BladesOfTheDarkmoon from './covenants/blades-of-the-darkmoon/BladesOfTheDarkmoon';
 import BrotherhoodOfBlood from './covenants/brotherhood-of-blood/BrotherhoodOfBlood';
