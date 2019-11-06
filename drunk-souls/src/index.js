@@ -3,17 +3,14 @@ import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, Container, Row, Col} from 'react-bootstrap';
-import * as serviceWorker from './serviceWorker';
-
-import App from './App';
-import Rules from './rules/Rules';
-import './index.css';
-import Covenants from './covenants/Covenants';
-import WarriorOfSunlight from './covenants/warrior-of-sunlight/WarriorOfSunlight';
-import BladesOfTheDarkmoon from './covenants/blades-of-the-darkmoon/BladesOfTheDarkmoon';
-import BrotherhoodOfBlood from './covenants/brotherhood-of-blood/BrotherhoodOfBlood';
-import CompanyOfChampions from './covenants/company-of-champions/CompanyOfChampions';
-import PilgrimsOfDark from './covenants/pilgrims-of-dark/PilgrimsOfDark';
+import 'index.css';
+import App from 'App';
+import Rules from 'components/HelpPages/Rules/Rules';
+import * as serviceWorker from 'serviceWorker';
+import {
+  Covenants, BladesOfTheDarkmoon, CompanyOfChampions,
+  BrotherhoodOfBlood, PilgrimsOfDark, WarriorOfSunlight 
+} from 'components/HelpPages/Covenants';
 
 
 const routing = (
@@ -31,22 +28,22 @@ const routing = (
         </Navbar>
       </div>
       <Container>
-          <Row>
-              <Col></Col>
-              <Col xs={12}>
-                <div className="main-content">
-                    <Route exact path="/" component={App} />
-                    <Route path="/rules" component={Rules} />
-                    <Route exact path="/covenants" component={Covenants} />
-                    <Route path="/covenants/blades-of-the-darkmoon" component={BladesOfTheDarkmoon}/>
-                    <Route path="/covenants/brotherhood-of-blood" component={BrotherhoodOfBlood}/>
-                    <Route path="/covenants/company-of-champions" component={CompanyOfChampions}/>
-                    <Route path="/covenants/pilgrims-of-dark" component={PilgrimsOfDark}/>
-                    <Route path="/covenants/warrior-of-sunlight" component={WarriorOfSunlight}/>
-                </div>
-              </Col>
-              <Col></Col>
-          </Row>
+        <Row>
+          <Col></Col>
+          <Col xs={12}>
+            <div>
+              <Route exact path="/" component={App} />
+              <Route path="/rules" component={Rules} />
+              <Route exact path="/covenants" component={Covenants} />
+              <Route path="/covenants/blades-of-the-darkmoon" component={BladesOfTheDarkmoon}/>
+              <Route path="/covenants/brotherhood-of-blood" component={BrotherhoodOfBlood}/>
+              <Route path="/covenants/company-of-champions" component={CompanyOfChampions}/>
+              <Route path="/covenants/pilgrims-of-dark" component={PilgrimsOfDark}/>
+              <Route path="/covenants/warrior-of-sunlight" component={WarriorOfSunlight}/>
+            </div>
+          </Col>
+          <Col></Col>
+        </Row>
       </Container>
         
     </Router>

@@ -1,12 +1,12 @@
 import React from 'react'
-import Champions from '../../img/champions2.png'
+import Champions from 'img/champions2.png'
 import Image from 'react-bootstrap/Image'
 
 class CompanyOfChampions extends React.Component {
   render() {
     document.title = "Drunk Souls - Company of Champions";
     return (
-      <div>
+      <div className="main-content">
         <h1 className="text-center">Company of Champions</h1>
         <div className="text-center">
             <Image fluid src={Champions} alt="Champions"></Image>

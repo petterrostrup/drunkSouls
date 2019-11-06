@@ -1,5 +1,5 @@
 import React from 'react'
-import Warriors from '../../img/warriors2.png'
+import Warriors from 'img/warriors2.png'
 import Image from 'react-bootstrap/Image'
 
 
@@ -7,7 +7,7 @@ class WarriorOfSunlight extends React.Component {
   render() {
     document.title = "Drunk Souls - Warriors of Sunlight";
     return (
-      <div>
+      <div className="main-content">
         <h1 className="text-center">Warrior of Sunlight</h1>
         <div className="text-center">
             <Image fluid src={Warriors} alt="Warriors"></Image>

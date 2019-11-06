@@ -2,7 +2,7 @@ import React from 'react';
 
 function RulesText() {
     return (
-        <div>
+      <div className="main-content">
         <h1 className="text-center">Drunk Souls Rules Overview</h1>
         <p>
           This is an overview of all the rules for the drunk souls drinking game. The rules are divided into several categories that depend on how experienced the players are.
