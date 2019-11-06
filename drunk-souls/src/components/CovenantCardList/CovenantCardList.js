@@ -4,7 +4,7 @@ import {Card, Nav, CardDeck} from 'react-bootstrap';
 function CovenantCard({image, title, text, link, buttonText}) {
   let source = require('../../'+image);
   return(
-    <Card text="white" className="card-dark">
+    <Card text="white" className="card-dark" style={{marginBottom:"2rem"}}>
       <Card.Img variant="top" src={source} alt="Card image cap"></Card.Img>
       <Card.Body className="flexing-container">
         <Card.Title>{title}</Card.Title>
@@ -14,6 +14,13 @@ function CovenantCard({image, title, text, link, buttonText}) {
     </Card> 
   )
 }
+function FillerCard(){
+  return (
+    <Card text="white" style={{ opacity: 0 }}>
+      <Card.Body></Card.Body>
+    </Card>
+  )
+}
 
 function CovenantCardList(props){
 
@@ -21,6 +28,7 @@ function CovenantCardList(props){
 
   useEffect(() => {
     
+    let uniqid = require('uniqid');
     let covenantList = props.covenants
       .map(covenant=>
         <CovenantCard
@@ -35,23 +43,30 @@ function CovenantCardList(props){
   
     let fillCardDeck = () => {
       let i = 0;
-      let deckList = [];
-      let listOfThree = [];
+      let cardDeckArray = [];
+      let covenantCardArray = [];
       covenantList.forEach(function (covenant, index, array){
         if (i === 3){
-          deckList.push(<CardDeck key={index}>{listOfThree}</CardDeck>);
-          i = 0;
-          listOfThree = [];
-          listOfThree.push(covenant)
+          cardDeckArray.push(<CardDeck key={uniqid()}>{covenantCardArray}</CardDeck>);
+          i = 1;
+          covenantCardArray = [];
+          covenantCardArray.push(covenant)
+
         } else if (index === array.length -1){
-          listOfThree.push(covenant);
-          deckList.push(<CardDeck key={index}>{listOfThree}</CardDeck>);
+          covenantCardArray.push(covenant);
+          if (i !== 0){
+            [...Array(2-i)].forEach(() => {
+              covenantCardArray.push(<FillerCard key={uniqid()}/>)
+            });
+          }
+          cardDeckArray.push(<CardDeck key={uniqid()}>{covenantCardArray}</CardDeck>);
+
         } else {
-          listOfThree.push(covenant);
-          i++;
+            covenantCardArray.push(covenant);
+            i++;
         }
       });
-      setCardDeck(deckList);
+      setCardDeck(cardDeckArray);
     };
 
     fillCardDeck()
