@@ -27,17 +27,18 @@ function CovenantCardList(props){
   let [cardDeck, setCardDeck] = useState([]);
 
   useEffect(() => {
-    
+
+
     let uniqid = require('uniqid');
     let covenantList = props.covenants
-      .map(covenant=>
+      .map(covenant=> 
         <CovenantCard
           key={covenant.id}
           image={covenant.image}
           title={covenant.title}
           text={covenant.text}
-          link={covenant.link}
-          buttonText={covenant.buttonText}
+          link={covenant.type[props.type].link}
+          buttonText={covenant.type[props.type].buttonText}
         />
     );
   

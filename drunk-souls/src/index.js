@@ -11,6 +11,8 @@ import {
   Covenants, BladesOfTheDarkmoon, CompanyOfChampions,
   BrotherhoodOfBlood, PilgrimsOfDark, WarriorOfSunlight 
 } from 'components/HelpPages/Covenants';
+import CovenantSelector from 'components/CovenantSelector/CovenantSelector';
+
 
 
 const routing = (
@@ -34,6 +36,7 @@ const routing = (
             <div>
               <Route exact path="/" component={App} />
               <Route path="/rules" component={Rules} />
+              <Route path="/select-covenant" component={CovenantSelector} />
               <Route exact path="/covenants" component={Covenants} />
               <Route path="/covenants/blades-of-the-darkmoon" component={BladesOfTheDarkmoon}/>
               <Route path="/covenants/brotherhood-of-blood" component={BrotherhoodOfBlood}/>

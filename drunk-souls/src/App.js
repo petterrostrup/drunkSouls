@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import DualButtonCard from 'components/DualButtonCard/DualButtonCard'
+import DualButtonCard from 'components/DualButtonCard/DualButtonCard';
 
 function App() {
   const mainMenu = {
@@ -13,7 +13,7 @@ function App() {
     title: "",
     firstLink: "",
     firstButton: "Join Game",
-    secondLink: "",
+    secondLink: "/select-covenant",
     secondButton: "Go Offline"
   }
 

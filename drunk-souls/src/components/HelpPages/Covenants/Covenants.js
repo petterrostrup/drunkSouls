@@ -38,7 +38,7 @@ function Covenants() {
       </p>
 
       <h2>All Covenants:</h2>
-      <CovenantCardList covenants={covenants}/>
+      <CovenantCardList covenants={covenants} type={"about"}/>
 
     </div>
   )
