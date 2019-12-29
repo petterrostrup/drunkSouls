@@ -1,12 +1,12 @@
 import React from 'react'
-import Darkmoon from '../../img/darkmoon2.png'
+import Darkmoon from 'img/darkmoon2.png'
 import Image from 'react-bootstrap/Image'
 
 class BladesOfTheDarkmoon extends React.Component {
   render() {
     document.title = "Drunk Souls - Blades of the Darkmoon";
     return (
-      <div>
+      <div className="main-content">
         <h1 className="text-center">Blades of the Darkmoon</h1>
         <div className="text-center">
             <Image fluid src={Darkmoon} alt="Darkmoon"></Image>
@@ -31,4 +31,4 @@ class BladesOfTheDarkmoon extends React.Component {
     )
   }
 }
-export default BladesOfTheDarkmoon
+export default BladesOfTheDarkmoon;

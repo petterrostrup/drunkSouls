@@ -1,0 +1,82 @@
+[
+  {
+    "id": "bladesAboutCard",
+    "image": "img/darkmoon2.png",
+    "title": "Blades of the Darkmoon",
+    "text": "The covenant that focuses primarily on \"PvP\". This covenant balances the other covenants by making them drink for their sins.",
+    "type": {
+      "about": {
+        "link": "Covenants/blades-of-the-darkmoon",
+        "buttonText": "Read More"
+      },
+      "select": {
+        "link": "",
+        "buttonText": "Join"
+      }
+    }
+  },
+  {
+    "id": "brotherhoodAboutCard",
+    "image": "img/brotherhood2.png",
+    "title": "Brotherhood of Blood",
+    "text": "The covenant that focuses primarily on \"PvP\". This lets you invade other players in return for sins",
+    "type": {
+      "about": {
+        "link": "Covenants/brotherhood-of-blood",
+        "buttonText": "Read More"
+      },
+      "select": {
+        "link": "",
+        "buttonText": "Join"
+      }
+    }
+  },
+  {
+    "id": "championsAboutCard",
+    "image": "img/champions2.png",
+    "title": "Company of Champions",
+    "text": "This covenant focuses mainly on the game itself. Makes the game more difficult in return for rewards",
+    "type": {
+      "about": {
+        "link": "Covenants/company-of-champions",
+        "buttonText": "Read More"
+      },
+      "select": {
+        "link": "",
+        "buttonText": "Join"
+      }
+    }
+  },
+  {
+    "id": "pilgrimsAboutCard",
+    "image": "img/pilgrims2.png",
+    "title": "Pilgrims of Dark",
+    "text": "This covenant shakes up how the covenants interact with eachother. You can curse players so that they have to drink more.",
+    "type": {
+      "about": {
+        "link": "Covenants/pilgrims-of-dark",
+        "buttonText": "Read More"
+      },
+      "select": {
+        "link": "",
+        "buttonText": "Join"
+      }
+    }
+  },
+  {
+    "id": "warriorsAboutCard",
+    "image": "img/warriors2.png",
+    "title": "Warriors of Sunlight",
+    "text": "The Sunbros. This covenant focuses on helping other players and praising the sun.",
+    "type": {
+      "about": {
+        "link": "Covenants/warrior-of-sunlight",
+        "buttonText": "Read More"
+      },
+      "select": {
+        "link": "",
+        "buttonText": "Join"
+      }
+    }
+  }
+]

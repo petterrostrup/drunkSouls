@@ -1,5 +1,5 @@
 import React from 'react'
-import Brotherhood from '../../img/brotherhood2.png'
+import Brotherhood from 'img/brotherhood2.png'
 import Image from 'react-bootstrap/Image'
 
 
@@ -7,7 +7,7 @@ class BrotherhoodOfBlood extends React.Component {
   render() {
     document.title = "Drunk Souls - Brotherhood of Blood";
     return (
-      <div>
+      <div className="main-content">
         <h1 className="text-center">Brotherhood of Blood</h1>
         <div className="text-center">
             <Image fluid src={Brotherhood} alt="Brotherhood"></Image>

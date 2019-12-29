@@ -5,7 +5,7 @@ class Rules extends React.Component {
   render() {
     document.title = "Drunk Souls - Rules";
     return (
-      <RulesText/>
+      <RulesText />
     )
   }
 }

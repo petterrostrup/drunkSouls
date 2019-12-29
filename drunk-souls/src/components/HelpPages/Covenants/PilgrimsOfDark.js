@@ -1,12 +1,12 @@
 import React from 'react'
-import Pilgrims from '../../img/pilgrims2.png'
+import Pilgrims from 'img/pilgrims2.png'
 import Image from 'react-bootstrap/Image'
 
 class PilgrimsOfDark extends React.Component {
   render() {
     document.title = "Drunk Souls - Pilgrims of Dark";
     return (
-      <div>
+      <div className="main-content">
         <h1 className="text-center">Pilgrims of Dark</h1>
           <div className="text-center">
               <Image fluid src={Pilgrims} alt="Pilgrims"></Image>
