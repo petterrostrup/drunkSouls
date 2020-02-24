@@ -1,15 +1,22 @@
 import React, {useState, useEffect} from 'react';
-import {Card, Nav, CardDeck} from 'react-bootstrap';
+import {Card, CardDeck, Button} from 'react-bootstrap';
 
-function CovenantCard({image, title, text, link, buttonText}) {
+function CovenantCard({id, image, title, text, link, buttonText, type, setCovenant}) {
   let source = require('../../'+image);
+  let doNothing = () => {}
+  let clickEvent = type === 'select' ? setCovenant : doNothing
   return(
     <Card text="white" className="card-dark" style={{marginBottom:"2rem"}}>
       <Card.Img variant="top" src={source} alt="Card image cap"></Card.Img>
       <Card.Body className="flexing-container">
         <Card.Title>{title}</Card.Title>
         <Card.Text>{text}</Card.Text>
-        <Nav.Link href={link} className="btn btn-secondary navbar-dark btn-end">{buttonText}</Nav.Link>
+        <Button 
+          href={link} 
+          onClick={() => clickEvent(id)} 
+          className="btn btn-secondary navbar-dark btn-end" >
+            {buttonText}
+        </Button>
       </Card.Body>
     </Card> 
   )
@@ -27,21 +34,23 @@ function CovenantCardList(props){
   let [cardDeck, setCardDeck] = useState([]);
 
   useEffect(() => {
-
-
     let uniqid = require('uniqid');
     let covenantList = props.covenants
       .map(covenant=> 
         <CovenantCard
           key={covenant.id}
+          id={covenant.id}
           image={covenant.image}
           title={covenant.title}
           text={covenant.text}
           link={covenant.type[props.type].link}
           buttonText={covenant.type[props.type].buttonText}
+          type={props.type}
+          setCovenant={props.setCovenant}
         />
     );
   
+    // Fills the page with covenant cards, but no more than 3 on each row
     let fillCardDeck = () => {
       let i = 0;
       let cardDeckArray = [];
