@@ -3,7 +3,7 @@ import {Button} from 'react-bootstrap';
 
 
 function DualButtonCard({
-  title, firstLink, firstButton, secondLink, secondButton, handleMenuChange
+  title, firstLink, firstButton, firstButtonDisabled, secondLink, secondButton, secondButtonDisabled, handleMenuChange
 }) {
   return (
     <div>
@@ -12,13 +12,13 @@ function DualButtonCard({
       <Button 
         href={firstLink} 
         onClick={() => handleMenuChange(firstButton)} 
-        className="btn btn-secondary navbar-dark btn-end" block
+        className="btn btn-secondary navbar-dark btn-end" block disabled={firstButtonDisabled}
       >{firstButton}</Button>
       <br/>
       <Button 
         href={secondLink} 
         onClick={() => handleMenuChange(secondButton)} 
-        className="btn btn-secondary navbar-dark btn-end" block
+        className="btn btn-secondary navbar-dark btn-end" block disabled={secondButtonDisabled}
       >{secondButton}</Button>
     </div>
   )

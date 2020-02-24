@@ -1,0 +1,29 @@
+{
+  "mainMenu": {
+    "title": "Welcome to Drunk Souls!",
+    "firstLink": "",
+    "firstButton": "Git Drunk",
+    "firstButtonDisabled": false,
+    "secondLink": "",
+    "secondButton": "Host Game",
+    "secondButtonDisabled": true
+  },
+  "joinMenu": {
+    "title": "",
+    "firstLink": "",
+    "firstButton": "Join Game",
+    "firstButtonDisabled": true,
+    "secondLink": "",
+    "secondButton": "Go Offline",
+    "secondButtonDisabled": false
+  },
+  "continueMenu": {
+    "title": "Continue from last session?",
+    "firstLink": "",
+    "firstButton": "Continue",
+    "firstButtonDisabled": true,
+    "secondLink": "/select-covenant",
+    "secondButton": "New Game",
+    "secondButtonDisabled": false
+  }
+}
